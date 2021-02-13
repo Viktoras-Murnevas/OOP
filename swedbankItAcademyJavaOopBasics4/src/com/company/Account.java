@@ -6,7 +6,6 @@ public class Account {
     private String name;
     private int balance;
 
-// alt+insert > Constructor
     public Account(String id, String name) {
         this.id = id;
         this.name = name;
@@ -18,7 +17,6 @@ public class Account {
         this.balance = balance;
     }
 
-// alt+insert > Getter for all 3 in order get them in Main app
     public String getId() {
         return id;
     }
@@ -31,7 +29,6 @@ public class Account {
         return balance;
     }
 
-// creating methods
     int credit(int amount) { return balance += amount; // + neprideda prie naujo balance, reikia +=
     }
 
@@ -55,8 +52,6 @@ public class Account {
         }
         return balance;
     }
-
-//alt+insert to String
 
     @Override
     public String toString() {

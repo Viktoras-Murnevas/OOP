@@ -10,16 +10,12 @@ public class Customer {
     private long personalNumber;
     private Loan[] loans;
 
-//1-as constructorius
     public Customer() {}
 
-//2-as constructorius
     public Customer(String name, String surname) {
         this.name = name;
         this.surname = surname;
     }
-//3-ias constructorius
-//alt+insert helps to create constructor
 
     public Customer(String name, String surname, int age, long personalNumber, Loan[] loans) {
         this.name = name;
@@ -29,8 +25,6 @@ public class Customer {
         this.loans = loans;
     }
 
-//alt+insert
-// perdaryti del arrays
     @Override
     public String toString() {
         return "Customer{" +

@@ -9,17 +9,12 @@ public class Loan {
     private LoanType loanType;
     private Date terminationDate;
 
-//1-as constructorius
     public Loan() {}
 
-//2-as constructorius
     public Loan(long id, int amount) {
         this.id = id;
         this.amount = amount;
     }
-
-//3-ias constructorius
-//alt+insert helps to create constructor
 
     public Loan(long id, int amount, LoanType loanType, Date terminationDate) {
         this.id = id;
@@ -28,7 +23,6 @@ public class Loan {
         this.terminationDate = terminationDate;
     }
 
-//alt+insert to String
     @Override
     public String toString() {
         return "Loan{" +
@@ -39,7 +33,7 @@ public class Loan {
                 '}';
     }
 
-// get getters with alt+insert
+
     public long getId() {
         return id;
     }
